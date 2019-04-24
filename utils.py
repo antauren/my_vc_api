@@ -11,8 +11,6 @@ def download_file(url, path):
     with open(path, 'wb') as file_:
         file_.write(response.content)
 
-    return True
-
 
 def load_json_file(path):
     with open(path) as f:

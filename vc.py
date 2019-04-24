@@ -35,8 +35,6 @@ def load_photo_to_vc_group_wall(access_token, group_id, image_path, message=''):
 
     wall_post_to_group(group_id, params)
 
-    return True
-
 
 def wall_post_to_group(group_id, params: dict) -> dict:
     ''' https://vk.com/dev/wall.post '''
