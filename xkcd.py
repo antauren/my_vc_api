@@ -7,7 +7,6 @@ from vc import load_photo_to_vc_group_wall
 from utils import download_file, load_json_file, get_file_name_from_url
 
 TMP_DIR = 'tmp'
-os.makedirs(TMP_DIR, exist_ok=True)
 TMP_JSON_PATH = os.path.join(TMP_DIR, 'rand_xkcd.json')
 
 
@@ -42,6 +41,8 @@ def get_img_path_and_alt():
 
 
 if __name__ == '__main__':
+    os.makedirs(TMP_DIR, exist_ok=True)
+
     last_num = get_xkcd_info()
 
     download_random_xkcd(last_num)
