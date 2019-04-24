@@ -54,7 +54,6 @@ if __name__ == '__main__':
     access_token = dotenv_values()['access_token']
     group_id = dotenv_values()['group_id']
 
-    is_load = load_photo_to_vc_group_wall(access_token, group_id, tmp_img_path, alt)
+    load_photo_to_vc_group_wall(access_token, group_id, tmp_img_path, alt)
 
-    if is_load:
-        shutil.rmtree(TMP_DIR)
+    shutil.rmtree(TMP_DIR)
