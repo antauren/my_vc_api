@@ -23,7 +23,3 @@ def get_file_name_from_url(url):
     parsed_url = parse.urlparse(url)
 
     return os.path.split(parsed_url.path)[-1]
-
-
-if __name__ == '__main__':
-    pass
