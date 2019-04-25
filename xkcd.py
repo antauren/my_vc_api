@@ -44,12 +44,8 @@ if __name__ == '__main__':
     os.makedirs(TMP_DIR, exist_ok=True)
 
     last_num = get_xkcd_info()
-
     download_random_xkcd(last_num)
-
     tmp_img_path, alt = get_img_path_and_alt()
-
-    ###########################
 
     access_token = dotenv_values()['access_token']
     group_id = dotenv_values()['group_id']
